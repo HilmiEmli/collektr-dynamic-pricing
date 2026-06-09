@@ -1,1 +1,0 @@
-# collektr-dynamic-pricing
