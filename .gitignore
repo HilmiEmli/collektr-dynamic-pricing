@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.streamlit/secrets.toml
+models/**/*.joblib
+models/**/metrics.json
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
