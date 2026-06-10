@@ -34,6 +34,25 @@ python -m streamlit run app.py
 
 Open `http://localhost:8501`.
 
+## Deploy to Google Cloud Run
+
+The included `Dockerfile` trains the Pokemon model during the image build, starts the Flask API internally, and exposes the Streamlit UI on Cloud Run's assigned port.
+
+Deploy from the repository root:
+
+```powershell
+gcloud run deploy collektr-dynamic-pricing `
+  --source . `
+  --region asia-southeast1 `
+  --allow-unauthenticated
+```
+
+When deploying through the Google Cloud console, select this GitHub repository and keep the Dockerfile path as:
+
+```text
+Dockerfile
+```
+
 ## API
 
 ```text
