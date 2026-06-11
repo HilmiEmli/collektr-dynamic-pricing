@@ -2,6 +2,11 @@
 
 This project trains Random Forest and XGBoost models using Pokemon card market-price history. It includes a Flask API and Streamlit dashboard.
 
+The dashboard includes:
+
+- A buyer workspace for market monitoring and AI price predictions
+- A seller workspace for minimum-price protection and automatic market-following listing prices
+
 ## Setup
 
 ```powershell
@@ -51,6 +56,18 @@ When deploying through the Google Cloud console, select this GitHub repository a
 
 ```text
 Dockerfile
+```
+
+Deploy the Flask API as a separate public Cloud Run service:
+
+```powershell
+gcloud.cmd builds submit --config cloudbuild-api.yaml
+
+gcloud.cmd run deploy collektr-pricing-api `
+  --image "gcr.io/YOUR_PROJECT_ID/collektr-pricing-api" `
+  --region asia-southeast1 `
+  --allow-unauthenticated `
+  --port 8080
 ```
 
 ## API

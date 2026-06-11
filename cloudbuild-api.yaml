@@ -1,0 +1,12 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -f
+      - Dockerfile.api
+      - -t
+      - gcr.io/$PROJECT_ID/collektr-pricing-api
+      - .
+
+images:
+  - gcr.io/$PROJECT_ID/collektr-pricing-api
