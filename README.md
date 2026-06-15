@@ -6,6 +6,7 @@ The dashboard includes:
 
 - A buyer workspace for market monitoring and AI price predictions
 - A seller workspace for minimum-price protection and automatic market-following listing prices
+- A custom-data workspace where users upload their own price history and receive a prediction
 
 ## Setup
 
@@ -89,6 +90,28 @@ Invoke-RestMethod -Method Post `
 ```
 
 Predict all cards by sending `{}`.
+
+Predict using custom price history:
+
+```python
+import pandas as pd
+import requests
+
+history = pd.read_csv("my_price_history.csv")
+
+response = requests.post(
+    "https://YOUR_API_URL/predict",
+    json={
+        "history": history.to_dict(orient="records"),
+        "date_col": "date",
+        "price_col": "price",
+    },
+)
+
+print(response.json())
+```
+
+Custom history must contain at least 30 rows. The API temporarily trains Random Forest and XGBoost using the submitted records, returns the best model's prediction, and does not overwrite the shared Pokemon model.
 
 ## Dataset
 
