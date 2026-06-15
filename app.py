@@ -95,8 +95,11 @@ def render_buyer(df: pd.DataFrame) -> None:
     current = market[market["name"] == selected_card].iloc[0]
     prediction: dict | None = None
     prediction_error: str | None = None
+    prediction_seconds: float | None = None
     try:
-        prediction = post_api("/predict", {"item": selected_card})["predictions"][0]
+        prediction_response = post_api("/predict", {"item": selected_card})
+        prediction = prediction_response["predictions"][0]
+        prediction_seconds = prediction_response.get("prediction_seconds")
     except Exception as exc:
         prediction_error = str(exc)
 
@@ -162,6 +165,8 @@ def render_buyer(df: pd.DataFrame) -> None:
             prediction_cols[2].metric("Expected change", money(prediction_change), f"{prediction_pct:+.2f}%")
             prediction_cols[3].metric("Prediction date", prediction["prediction_date"])
             st.caption(f"Prediction generated using {prediction['model_name'].replace('_', ' ').title()}.")
+            if prediction_seconds is not None:
+                st.caption(f"Prediction completed in {prediction_seconds:.3f} seconds.")
         else:
             st.error(f"Prediction is unavailable: {prediction_error}")
 
@@ -430,6 +435,11 @@ def render_custom_data() -> None:
         result_cols[1].metric("Predicted next price", money(predicted_price), money(predicted_price - latest_price))
         result_cols[2].metric("Prediction date", prediction["prediction_date"])
         result_cols[3].metric("Best model", model_name.replace("_", " ").title())
+
+        timing_cols = st.columns(3)
+        timing_cols[0].metric("Training time", f"{result.get('training_seconds', 0):.3f} sec")
+        timing_cols[1].metric("Prediction time", f"{result.get('prediction_seconds', 0):.3f} sec")
+        timing_cols[2].metric("Total request time", f"{result.get('total_seconds', 0):.3f} sec")
 
         metrics = result.get("metrics", {})
         if metrics:

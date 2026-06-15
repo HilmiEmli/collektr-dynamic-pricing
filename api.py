@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import tempfile
+import time
 from pathlib import Path
 from typing import Any
 
@@ -50,9 +51,16 @@ def metrics() -> tuple[Any, int]:
 @app.post("/train")
 def train() -> tuple[Any, int]:
     try:
+        started_at = time.perf_counter()
         df = load_pricing_data(DATA_PATH, DATE_COLUMN, PRICE_COLUMN, CSV_SEPARATOR)
         result = train_models(df, DATE_COLUMN, PRICE_COLUMN, MODEL_DIR, ENTITY_COLUMN)
-        return jsonify({"best_model": result.model_name, "metrics": result.metrics}), 200
+        return jsonify(
+            {
+                "best_model": result.model_name,
+                "metrics": result.metrics,
+                "training_seconds": round(time.perf_counter() - started_at, 3),
+            }
+        ), 200
     except Exception as exc:
         return jsonify({"error": str(exc)}), 400
 
@@ -60,6 +68,7 @@ def train() -> tuple[Any, int]:
 @app.post("/predict")
 def predict() -> tuple[Any, int]:
     try:
+        request_started_at = time.perf_counter()
         payload = request.get_json(silent=True) or {}
 
         if "history" in payload:
@@ -82,8 +91,12 @@ def predict() -> tuple[Any, int]:
                 custom_df.to_csv(csv_path, index=False)
 
                 df = load_pricing_data(csv_path, date_col, price_col)
+                training_started_at = time.perf_counter()
                 result = train_models(df, date_col, price_col, model_dir, entity_col)
+                training_seconds = time.perf_counter() - training_started_at
+                prediction_started_at = time.perf_counter()
                 predictions = predict_tomorrow(df, model_dir, item)
+                prediction_seconds = time.perf_counter() - prediction_started_at
 
             return jsonify(
                 {
@@ -92,11 +105,24 @@ def predict() -> tuple[Any, int]:
                     "metrics": result.metrics,
                     "predictions": predictions,
                     "history_rows": len(df),
+                    "training_seconds": round(training_seconds, 3),
+                    "prediction_seconds": round(prediction_seconds, 3),
+                    "total_seconds": round(time.perf_counter() - request_started_at, 3),
                 }
             ), 200
 
         df = load_pricing_data(DATA_PATH, DATE_COLUMN, PRICE_COLUMN, CSV_SEPARATOR)
-        return jsonify({"mode": "pokemon", "predictions": predict_tomorrow(df, MODEL_DIR, payload.get("item"))}), 200
+        prediction_started_at = time.perf_counter()
+        predictions = predict_tomorrow(df, MODEL_DIR, payload.get("item"))
+        prediction_seconds = time.perf_counter() - prediction_started_at
+        return jsonify(
+            {
+                "mode": "pokemon",
+                "predictions": predictions,
+                "prediction_seconds": round(prediction_seconds, 3),
+                "total_seconds": round(time.perf_counter() - request_started_at, 3),
+            }
+        ), 200
     except Exception as exc:
         return jsonify({"error": str(exc)}), 400
 
