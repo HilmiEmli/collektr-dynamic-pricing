@@ -532,15 +532,43 @@ def main() -> None:
     st.markdown(
         """
         <style>
-        .block-container {padding-top: 1.25rem; padding-bottom: 2rem;}
-        [data-testid="stSidebar"] {border-right: 1px solid rgba(128,128,128,.25);}
+        .stApp {
+            background: #ffffff;
+            color: #15151f;
+        }
+        .block-container {
+            padding-top: 1.25rem;
+            padding-bottom: 2rem;
+            background: #ffffff;
+        }
+        [data-testid="stSidebar"] {
+            background: linear-gradient(180deg, #6738e8 0%, #c43be8 100%);
+            border-right: none;
+        }
+        [data-testid="stSidebar"] * {
+            color: #ffffff !important;
+        }
+        [data-testid="stSidebar"] [data-baseweb="select"] *,
+        [data-testid="stSidebar"] input,
+        [data-testid="stSidebar"] textarea {
+            color: #15151f !important;
+        }
+        [data-testid="stSidebar"] [data-baseweb="radio"] label {
+            color: #ffffff !important;
+        }
         [data-testid="stMetric"] {
-            border: 1px solid rgba(128,128,128,.22);
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
             border-radius: 6px;
             padding: .8rem 1rem;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, .04);
         }
         div[data-testid="stMetricLabel"] {font-size: .8rem;}
-        h1, h2, h3 {letter-spacing: 0;}
+        h1, h2, h3, p, label, span {letter-spacing: 0;}
+        div[data-testid="stDataFrame"],
+        div[data-testid="stTable"] {
+            background: #ffffff;
+        }
         </style>
         """,
         unsafe_allow_html=True,
