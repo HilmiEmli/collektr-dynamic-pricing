@@ -11,12 +11,13 @@ import pandas as pd
 from flask import Flask, jsonify, request
 
 from src.config import CSV_SEPARATOR, DATA_PATH, DATE_COLUMN, ENTITY_COLUMN, MODEL_DIR, PRICE_COLUMN
-from src.dynamic_pricing import load_pricing_data, predict_tomorrow, train_models
+from src.dynamic_pricing import load_pricing_data, predict_future_prices, train_models
 
 
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 5 * 1024 * 1024
 MAX_CUSTOM_HISTORY_ROWS = 5000
+DEFAULT_FORECAST_DAYS = 7
 DATE_COLUMN_CANDIDATES = ("date", "updated_at", "created_at", "timestamp", "datetime")
 PRICE_COLUMN_CANDIDATES = ("price", "market", "market_price", "current_price", "value")
 ENTITY_COLUMN_CANDIDATES = ("product", "item", "name", "card", "sku")
@@ -127,6 +128,7 @@ def predict() -> tuple[Any, int]:
 
         if isinstance(payload, list) or (isinstance(payload, dict) and "history" in payload):
             history, date_col, price_col, entity_col, item = parse_custom_payload(payload)
+            horizon = payload.get("horizon", DEFAULT_FORECAST_DAYS) if isinstance(payload, dict) else DEFAULT_FORECAST_DAYS
             custom_df = pd.DataFrame(history)
 
             with tempfile.TemporaryDirectory() as temp_dir:
@@ -140,7 +142,7 @@ def predict() -> tuple[Any, int]:
                 result = train_models(df, date_col, price_col, model_dir, entity_col)
                 training_seconds = time.perf_counter() - training_started_at
                 prediction_started_at = time.perf_counter()
-                predictions = predict_tomorrow(df, model_dir, item)
+                predictions = predict_future_prices(df, model_dir, item, horizon=int(horizon))
                 prediction_seconds = time.perf_counter() - prediction_started_at
 
             return jsonify(
@@ -150,6 +152,7 @@ def predict() -> tuple[Any, int]:
                     "metrics": result.metrics,
                     "predictions": predictions,
                     "history_rows": len(df),
+                    "forecast_days": int(horizon),
                     "training_seconds": round(training_seconds, 3),
                     "prediction_seconds": round(prediction_seconds, 3),
                     "total_seconds": round(time.perf_counter() - request_started_at, 3),
@@ -161,12 +164,14 @@ def predict() -> tuple[Any, int]:
 
         df = load_pricing_data(DATA_PATH, DATE_COLUMN, PRICE_COLUMN, CSV_SEPARATOR)
         prediction_started_at = time.perf_counter()
-        predictions = predict_tomorrow(df, MODEL_DIR, payload.get("item"))
+        horizon = int(payload.get("horizon", DEFAULT_FORECAST_DAYS))
+        predictions = predict_future_prices(df, MODEL_DIR, payload.get("item"), horizon=horizon)
         prediction_seconds = time.perf_counter() - prediction_started_at
         return jsonify(
             {
                 "mode": "pokemon",
                 "predictions": predictions,
+                "forecast_days": horizon,
                 "prediction_seconds": round(prediction_seconds, 3),
                 "total_seconds": round(time.perf_counter() - request_started_at, 3),
             }

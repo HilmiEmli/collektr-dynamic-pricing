@@ -188,10 +188,16 @@ def train_models(
     return TrainingResult(best_model_name, metrics, feature_columns)
 
 
-def predict_tomorrow(df: pd.DataFrame, model_dir: Path, item: str | None = None) -> list[dict[str, Any]]:
+def predict_future_prices(
+    df: pd.DataFrame, model_dir: Path, item: str | None = None, horizon: int = 7
+) -> list[dict[str, Any]]:
     artifact_path = model_dir / MODEL_FILE
     if not artifact_path.exists():
         raise FileNotFoundError(f"No saved model found at {artifact_path}. Run training first.")
+    if horizon < 1:
+        raise ValueError("horizon must be at least 1")
+    if horizon > 30:
+        raise ValueError("horizon cannot be greater than 30")
 
     artifact = joblib.load(artifact_path)
     date_col = artifact["date_col"]
@@ -202,37 +208,75 @@ def predict_tomorrow(df: pd.DataFrame, model_dir: Path, item: str | None = None)
     if item and not entity_col:
         raise ValueError("--item can only be used with a model trained using --entity-col")
 
-    featured = build_features(df, date_col, price_col, entity_col)
-    if item:
-        featured = featured[featured[entity_col].astype(str).str.casefold() == item.casefold()]
-        if featured.empty:
-            raise ValueError(f"No rows found for item: {item}")
+    working_df = df.copy().sort_values([entity_col, date_col] if entity_col else [date_col]).reset_index(drop=True)
+    if item and working_df[entity_col].astype(str).str.casefold().eq(item.casefold()).sum() == 0:
+        raise ValueError(f"No rows found for item: {item}")
 
-    if entity_col:
-        latest_rows = featured.sort_values(date_col).groupby(entity_col, sort=False).tail(1)
-    else:
-        latest_rows = featured.sort_values(date_col).tail(1)
+    results_by_key: dict[str, dict[str, Any]] = {}
+    numeric_columns = working_df.select_dtypes(include=[np.number]).columns.tolist()
 
-    latest_features = latest_rows[feature_columns]
-    if latest_features.isna().any(axis=None):
-        missing_columns = latest_features.columns[latest_features.isna().any()].tolist()
-        raise ValueError(f"Latest row has missing engineered features: {', '.join(missing_columns)}")
+    for step in range(1, horizon + 1):
+        featured = build_features(working_df, date_col, price_col, entity_col)
+        if item:
+            prediction_pool = featured[featured[entity_col].astype(str).str.casefold() == item.casefold()]
+        else:
+            prediction_pool = featured
 
-    predictions = artifact["model"].predict(latest_features)
-    results: list[dict[str, Any]] = []
-    for (_, row), prediction in zip(latest_rows.iterrows(), predictions):
-        latest_date = pd.to_datetime(row[date_col])
-        output = {
-            "model_name": artifact["model_name"],
-            "latest_date": latest_date.date().isoformat(),
-            "prediction_date": (latest_date + pd.Timedelta(days=1)).date().isoformat(),
-            "predicted_price": round(float(prediction), 2),
-        }
         if entity_col:
-            output["item"] = str(row[entity_col])
-        results.append(output)
+            latest_rows = prediction_pool.sort_values(date_col).groupby(entity_col, sort=False).tail(1)
+        else:
+            latest_rows = prediction_pool.sort_values(date_col).tail(1)
 
-    return results
+        latest_features = latest_rows[feature_columns]
+        if latest_features.isna().any(axis=None):
+            missing_columns = latest_features.columns[latest_features.isna().any()].tolist()
+            raise ValueError(f"Latest row has missing engineered features: {', '.join(missing_columns)}")
+
+        predictions = artifact["model"].predict(latest_features)
+        new_rows: list[pd.Series] = []
+        for (_, row), prediction in zip(latest_rows.iterrows(), predictions):
+            latest_date = pd.to_datetime(row[date_col])
+            prediction_date = latest_date + pd.Timedelta(days=1)
+            key = str(row[entity_col]) if entity_col else "__single_series__"
+            predicted_price = round(float(prediction), 2)
+
+            if key not in results_by_key:
+                output = {
+                    "model_name": artifact["model_name"],
+                    "latest_date": latest_date.date().isoformat(),
+                    "prediction_date": prediction_date.date().isoformat(),
+                    "predicted_price": predicted_price,
+                    "forecast": [],
+                }
+                if entity_col:
+                    output["item"] = key
+                results_by_key[key] = output
+
+            results_by_key[key]["forecast"].append(
+                {
+                    "day": step,
+                    "prediction_date": prediction_date.date().isoformat(),
+                    "predicted_price": predicted_price,
+                }
+            )
+
+            original_columns = working_df.columns
+            new_row = row.reindex(original_columns).copy()
+            new_row[date_col] = prediction_date
+            new_row[price_col] = predicted_price
+            for column in numeric_columns:
+                if column != price_col and pd.isna(new_row[column]):
+                    new_row[column] = row.get(column)
+            new_rows.append(new_row)
+
+        if new_rows:
+            working_df = pd.concat([working_df, pd.DataFrame(new_rows)], ignore_index=True)
+
+    return list(results_by_key.values())
+
+
+def predict_tomorrow(df: pd.DataFrame, model_dir: Path, item: str | None = None) -> list[dict[str, Any]]:
+    return predict_future_prices(df, model_dir, item, horizon=1)
 
 
 def parse_args() -> argparse.Namespace:

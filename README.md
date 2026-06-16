@@ -2,6 +2,8 @@
 
 This project trains Random Forest and XGBoost models using Pokemon card market-price history. It includes a Flask API and Streamlit dashboard.
 
+Predictions return a 7-day forecast by default.
+
 The dashboard includes:
 
 - A buyer workspace for market monitoring and AI price predictions
@@ -89,29 +91,51 @@ Invoke-RestMethod -Method Post `
   -Body '{"item":"Alakazam"}'
 ```
 
-Predict all cards by sending `{}`.
+Predict all cards by sending `{}`. Add `"horizon": 7` to control the forecast length up to 30 days.
 
-Predict using custom price history:
+Predict using a JSON array directly:
 
 ```python
-import pandas as pd
+import json
 import requests
 
-history = pd.read_csv("my_price_history.csv")
+with open("my_price_history.json", encoding="utf-8") as file:
+    history = json.load(file)
 
 response = requests.post(
     "https://YOUR_API_URL/predict",
-    json={
-        "history": history.to_dict(orient="records"),
-        "date_col": "date",
-        "price_col": "price",
-    },
+    json=history,
 )
 
 print(response.json())
 ```
 
-Custom history must contain at least 30 rows. The API temporarily trains Random Forest and XGBoost using the submitted records, returns the best model's prediction, and does not overwrite the shared Pokemon model.
+The API automatically recognizes common field names:
+
+```text
+Date: date, updated_at, created_at, timestamp, datetime
+Price: price, market, market_price, current_price, value
+Item: product, item, name, card, sku
+```
+
+Use a wrapped JSON object when field names are different or when predicting one selected item:
+
+```json
+{
+  "history": [
+    {"recorded_on": "2026-01-01", "product_code": "A", "selling_price": 42.10},
+    {"recorded_on": "2026-01-02", "product_code": "A", "selling_price": 43.20}
+  ],
+  "date_col": "recorded_on",
+  "price_col": "selling_price",
+  "entity_col": "product_code",
+  "item": "A"
+}
+```
+
+Custom history must contain at least 30 records. Training is temporary and does not overwrite the shared Pokemon model.
+
+The Custom Data workspace accepts uploaded JSON arrays, pasted JSON arrays, and CSV files.
 
 ## Dataset
 
