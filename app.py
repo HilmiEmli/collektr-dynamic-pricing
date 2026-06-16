@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import json
+
 import pandas as pd
 import requests
 import streamlit as st
@@ -42,6 +44,24 @@ def latest_market(df: pd.DataFrame) -> pd.DataFrame:
 
 def money(value: float) -> str:
     return f"${value:,.2f}"
+
+
+def money_delta(value: float) -> str:
+    sign = "-" if value < 0 else "+"
+    return f"{sign}${abs(value):,.2f}"
+
+
+def json_records(value: object) -> list[dict]:
+    if isinstance(value, list):
+        records = value
+    elif isinstance(value, dict) and isinstance(value.get("history"), list):
+        records = value["history"]
+    else:
+        raise ValueError("JSON must be an array of records or an object containing a history array.")
+
+    if not records or not all(isinstance(record, dict) for record in records):
+        raise ValueError("Every JSON history entry must be an object.")
+    return records
 
 
 def default_listings() -> pd.DataFrame:
@@ -112,13 +132,17 @@ def render_buyer(df: pd.DataFrame) -> None:
         st.metric("Daily movement", direction, f"{current['change_pct']:+.2f}%")
 
     metric_cols = st.columns(5)
-    metric_cols[0].metric("Current market", money(current["market"]), money(current["change"]))
+    metric_cols[0].metric("Current market", money(current["market"]), money_delta(current["change"]))
     metric_cols[1].metric("Market low", money(current["market_low"]))
     metric_cols[2].metric("Price spread", money(current["spread"]))
     metric_cols[3].metric("Period average", money(card_history["market"].mean()))
     if prediction:
         prediction_change = prediction["predicted_price"] - current["market"]
-        metric_cols[4].metric("Predicted next price", money(prediction["predicted_price"]), money(prediction_change))
+        metric_cols[4].metric(
+            "Predicted next price",
+            money(prediction["predicted_price"]),
+            money_delta(prediction_change),
+        )
     else:
         metric_cols[4].metric("Predicted next price", "Unavailable")
 
@@ -331,23 +355,46 @@ def render_seller(df: pd.DataFrame) -> None:
 def render_custom_data() -> None:
     with st.sidebar:
         st.subheader("Custom Price History")
-        st.caption("Upload your own CSV to train a temporary model and predict the next price.")
+        st.caption("Submit a JSON array to train a temporary model and predict the next price.")
 
     st.title("Custom Price Prediction")
-    uploaded = st.file_uploader("Upload price-history CSV", type=["csv"])
-    if uploaded is None:
-        st.info("Upload a CSV with at least 30 historical rows. The file must include a date and price column.")
+    input_method = st.radio("Input method", ["Upload JSON", "Paste JSON", "Upload CSV"], horizontal=True)
+    uploaded = None
+    pasted_json = ""
+    if input_method == "Upload JSON":
+        uploaded = st.file_uploader("Upload JSON-array price history", type=["json"])
+    elif input_method == "Paste JSON":
+        pasted_json = st.text_area(
+            "Paste JSON array",
+            height=180,
+            placeholder='[{"date":"2026-01-01","price":42.10},{"date":"2026-01-02","price":43.20}]',
+        )
+    else:
+        uploaded = st.file_uploader("Upload CSV price history", type=["csv"])
+
+    if uploaded is None and not pasted_json.strip():
+        st.info("Provide a JSON array with at least 30 historical records. CSV remains available as an optional input.")
         return
 
     try:
-        custom_df = pd.read_csv(uploaded, sep=None, engine="python")
+        if input_method == "Paste JSON":
+            records = json_records(json.loads(pasted_json))
+            custom_df = pd.DataFrame(records)
+            source_name = "pasted-json"
+        elif input_method == "Upload JSON":
+            records = json_records(json.load(uploaded))
+            custom_df = pd.DataFrame(records)
+            source_name = uploaded.name
+        else:
+            custom_df = pd.read_csv(uploaded, sep=None, engine="python")
+            source_name = uploaded.name
     except Exception as exc:
-        st.error(f"Could not read CSV: {exc}")
+        st.error(f"Could not read the input: {exc}")
         return
 
     columns = custom_df.columns.tolist()
     if len(columns) < 2:
-        st.error("The CSV needs at least a date column and price column.")
+        st.error("The history records need at least a date column and price column.")
         return
 
     controls = st.columns(3)
@@ -365,7 +412,7 @@ def render_custom_data() -> None:
         item = st.selectbox("Item to predict", items)
 
     custom_request_key = (
-        uploaded.name,
+        source_name,
         len(custom_df),
         tuple(columns),
         date_col,
@@ -432,7 +479,11 @@ def render_custom_data() -> None:
         model_name = result.get("best_model") or prediction.get("model_name") or "unknown"
         result_cols = st.columns(4)
         result_cols[0].metric("Latest price", money(latest_price))
-        result_cols[1].metric("Predicted next price", money(predicted_price), money(predicted_price - latest_price))
+        result_cols[1].metric(
+            "Predicted next price",
+            money(predicted_price),
+            money_delta(predicted_price - latest_price),
+        )
         result_cols[2].metric("Prediction date", prediction["prediction_date"])
         result_cols[3].metric("Best model", model_name.replace("_", " ").title())
 

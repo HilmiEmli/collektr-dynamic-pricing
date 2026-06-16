@@ -17,6 +17,58 @@ from src.dynamic_pricing import load_pricing_data, predict_tomorrow, train_model
 app = Flask(__name__)
 app.config["MAX_CONTENT_LENGTH"] = 5 * 1024 * 1024
 MAX_CUSTOM_HISTORY_ROWS = 5000
+DATE_COLUMN_CANDIDATES = ("date", "updated_at", "created_at", "timestamp", "datetime")
+PRICE_COLUMN_CANDIDATES = ("price", "market", "market_price", "current_price", "value")
+ENTITY_COLUMN_CANDIDATES = ("product", "item", "name", "card", "sku")
+
+
+def infer_column(columns: list[str], candidates: tuple[str, ...], label: str) -> str:
+    normalized = {column.casefold(): column for column in columns}
+    for candidate in candidates:
+        if candidate in normalized:
+            return normalized[candidate]
+    raise ValueError(
+        f"Could not infer the {label} column. Use the wrapped JSON format and provide {label}_col explicitly."
+    )
+
+
+def parse_custom_payload(payload: Any) -> tuple[list[dict[str, Any]], str, str, str | None, str | None]:
+    if isinstance(payload, list):
+        history = payload
+        options: dict[str, Any] = {}
+    elif isinstance(payload, dict) and "history" in payload:
+        history = payload["history"]
+        options = payload
+    else:
+        raise ValueError("Custom input must be a JSON array or an object containing a history array.")
+
+    if not isinstance(history, list) or not history:
+        raise ValueError("history must be a non-empty JSON array of price records.")
+    if len(history) > MAX_CUSTOM_HISTORY_ROWS:
+        raise ValueError(f"history cannot contain more than {MAX_CUSTOM_HISTORY_ROWS} rows.")
+    if not all(isinstance(record, dict) for record in history):
+        raise ValueError("Every history array entry must be a JSON object.")
+
+    columns = list(pd.DataFrame(history).columns)
+    if not columns:
+        raise ValueError("History records must contain fields.")
+
+    date_col = options.get("date_col") or infer_column(columns, DATE_COLUMN_CANDIDATES, "date")
+    price_col = options.get("price_col") or infer_column(columns, PRICE_COLUMN_CANDIDATES, "price")
+    normalized_columns = {column.casefold(): column for column in columns}
+    entity_col = options.get("entity_col") or next(
+        (normalized_columns[candidate] for candidate in ENTITY_COLUMN_CANDIDATES if candidate in normalized_columns),
+        None,
+    )
+    item = options.get("item")
+
+    missing = {date_col, price_col} - set(columns)
+    if missing:
+        raise ValueError(f"History records are missing required fields: {', '.join(sorted(missing))}")
+    if entity_col and entity_col not in columns:
+        raise ValueError(f"History records are missing entity_col: {entity_col}")
+
+    return history, date_col, price_col, entity_col, item
 
 
 @app.get("/")
@@ -69,21 +121,14 @@ def train() -> tuple[Any, int]:
 def predict() -> tuple[Any, int]:
     try:
         request_started_at = time.perf_counter()
-        payload = request.get_json(silent=True) or {}
+        payload = request.get_json(silent=True)
+        if payload is None:
+            payload = {}
 
-        if "history" in payload:
-            history = payload["history"]
-            if not isinstance(history, list) or not history:
-                raise ValueError("history must be a non-empty list of price records.")
-            if len(history) > MAX_CUSTOM_HISTORY_ROWS:
-                raise ValueError(f"history cannot contain more than {MAX_CUSTOM_HISTORY_ROWS} rows.")
-
-            date_col = payload.get("date_col", "date")
-            price_col = payload.get("price_col", "price")
-            entity_col = payload.get("entity_col") or None
-            item = payload.get("item")
-
+        if isinstance(payload, list) or (isinstance(payload, dict) and "history" in payload):
+            history, date_col, price_col, entity_col, item = parse_custom_payload(payload)
             custom_df = pd.DataFrame(history)
+
             with tempfile.TemporaryDirectory() as temp_dir:
                 temp_path = Path(temp_dir)
                 csv_path = temp_path / "custom_history.csv"
@@ -110,6 +155,9 @@ def predict() -> tuple[Any, int]:
                     "total_seconds": round(time.perf_counter() - request_started_at, 3),
                 }
             ), 200
+
+        if not isinstance(payload, dict):
+            raise ValueError("Request body must be a JSON object or a JSON history array.")
 
         df = load_pricing_data(DATA_PATH, DATE_COLUMN, PRICE_COLUMN, CSV_SEPARATOR)
         prediction_started_at = time.perf_counter()
