@@ -1,0 +1,1082 @@
+[
+  {
+    "date":"2026-01-01",
+    "product":"Collector Box A",
+    "price":42.17,
+    "demand":91
+  },
+  {
+    "date":"2026-01-02",
+    "product":"Collector Box A",
+    "price":41.81,
+    "demand":98
+  },
+  {
+    "date":"2026-01-03",
+    "product":"Collector Box A",
+    "price":43.16,
+    "demand":99
+  },
+  {
+    "date":"2026-01-04",
+    "product":"Collector Box A",
+    "price":43.6,
+    "demand":101
+  },
+  {
+    "date":"2026-01-05",
+    "product":"Collector Box A",
+    "price":42.32,
+    "demand":103
+  },
+  {
+    "date":"2026-01-06",
+    "product":"Collector Box A",
+    "price":42.95,
+    "demand":102
+  },
+  {
+    "date":"2026-01-07",
+    "product":"Collector Box A",
+    "price":43.95,
+    "demand":96
+  },
+  {
+    "date":"2026-01-08",
+    "product":"Collector Box A",
+    "price":43.86,
+    "demand":95
+  },
+  {
+    "date":"2026-01-09",
+    "product":"Collector Box A",
+    "price":44.13,
+    "demand":101
+  },
+  {
+    "date":"2026-01-10",
+    "product":"Collector Box A",
+    "price":43.71,
+    "demand":97
+  },
+  {
+    "date":"2026-01-11",
+    "product":"Collector Box A",
+    "price":44.65,
+    "demand":90
+  },
+  {
+    "date":"2026-01-12",
+    "product":"Collector Box A",
+    "price":44.52,
+    "demand":91
+  },
+  {
+    "date":"2026-01-13",
+    "product":"Collector Box A",
+    "price":44.01,
+    "demand":93
+  },
+  {
+    "date":"2026-01-14",
+    "product":"Collector Box A",
+    "price":44.43,
+    "demand":99
+  },
+  {
+    "date":"2026-01-15",
+    "product":"Collector Box A",
+    "price":43.88,
+    "demand":98
+  },
+  {
+    "date":"2026-01-16",
+    "product":"Collector Box A",
+    "price":42.94,
+    "demand":102
+  },
+  {
+    "date":"2026-01-17",
+    "product":"Collector Box A",
+    "price":43.4,
+    "demand":96
+  },
+  {
+    "date":"2026-01-18",
+    "product":"Collector Box A",
+    "price":42.45,
+    "demand":100
+  },
+  {
+    "date":"2026-01-19",
+    "product":"Collector Box A",
+    "price":43.26,
+    "demand":101
+  },
+  {
+    "date":"2026-01-20",
+    "product":"Collector Box A",
+    "price":42.57,
+    "demand":97
+  },
+  {
+    "date":"2026-01-21",
+    "product":"Collector Box A",
+    "price":42.36,
+    "demand":101
+  },
+  {
+    "date":"2026-01-22",
+    "product":"Collector Box A",
+    "price":42.0,
+    "demand":96
+  },
+  {
+    "date":"2026-01-23",
+    "product":"Collector Box A",
+    "price":43.0,
+    "demand":97
+  },
+  {
+    "date":"2026-01-24",
+    "product":"Collector Box A",
+    "price":42.26,
+    "demand":97
+  },
+  {
+    "date":"2026-01-25",
+    "product":"Collector Box A",
+    "price":42.19,
+    "demand":93
+  },
+  {
+    "date":"2026-01-26",
+    "product":"Collector Box A",
+    "price":42.37,
+    "demand":102
+  },
+  {
+    "date":"2026-01-27",
+    "product":"Collector Box A",
+    "price":43.05,
+    "demand":96
+  },
+  {
+    "date":"2026-01-28",
+    "product":"Collector Box A",
+    "price":43.2,
+    "demand":98
+  },
+  {
+    "date":"2026-01-29",
+    "product":"Collector Box A",
+    "price":43.52,
+    "demand":100
+  },
+  {
+    "date":"2026-01-30",
+    "product":"Collector Box A",
+    "price":43.86,
+    "demand":100
+  },
+  {
+    "date":"2026-01-31",
+    "product":"Collector Box A",
+    "price":45.16,
+    "demand":99
+  },
+  {
+    "date":"2026-02-01",
+    "product":"Collector Box A",
+    "price":44.13,
+    "demand":97
+  },
+  {
+    "date":"2026-02-02",
+    "product":"Collector Box A",
+    "price":44.45,
+    "demand":95
+  },
+  {
+    "date":"2026-02-03",
+    "product":"Collector Box A",
+    "price":44.66,
+    "demand":96
+  },
+  {
+    "date":"2026-02-04",
+    "product":"Collector Box A",
+    "price":45.8,
+    "demand":87
+  },
+  {
+    "date":"2026-02-05",
+    "product":"Collector Box A",
+    "price":46.41,
+    "demand":87
+  },
+  {
+    "date":"2026-02-06",
+    "product":"Collector Box A",
+    "price":46.01,
+    "demand":88
+  },
+  {
+    "date":"2026-02-07",
+    "product":"Collector Box A",
+    "price":45.85,
+    "demand":90
+  },
+  {
+    "date":"2026-02-08",
+    "product":"Collector Box A",
+    "price":46.04,
+    "demand":97
+  },
+  {
+    "date":"2026-02-09",
+    "product":"Collector Box A",
+    "price":46.98,
+    "demand":89
+  },
+  {
+    "date":"2026-02-10",
+    "product":"Collector Box A",
+    "price":47.09,
+    "demand":92
+  },
+  {
+    "date":"2026-02-11",
+    "product":"Collector Box A",
+    "price":46.99,
+    "demand":100
+  },
+  {
+    "date":"2026-02-12",
+    "product":"Collector Box A",
+    "price":46.28,
+    "demand":93
+  },
+  {
+    "date":"2026-02-13",
+    "product":"Collector Box A",
+    "price":46.67,
+    "demand":98
+  },
+  {
+    "date":"2026-02-14",
+    "product":"Collector Box A",
+    "price":46.46,
+    "demand":90
+  },
+  {
+    "date":"2026-02-15",
+    "product":"Collector Box A",
+    "price":46.34,
+    "demand":93
+  },
+  {
+    "date":"2026-02-16",
+    "product":"Collector Box A",
+    "price":46.49,
+    "demand":89
+  },
+  {
+    "date":"2026-02-17",
+    "product":"Collector Box A",
+    "price":45.92,
+    "demand":93
+  },
+  {
+    "date":"2026-02-18",
+    "product":"Collector Box A",
+    "price":45.95,
+    "demand":99
+  },
+  {
+    "date":"2026-02-19",
+    "product":"Collector Box A",
+    "price":45.41,
+    "demand":87
+  },
+  {
+    "date":"2026-02-20",
+    "product":"Collector Box A",
+    "price":45.34,
+    "demand":98
+  },
+  {
+    "date":"2026-02-21",
+    "product":"Collector Box A",
+    "price":45.38,
+    "demand":97
+  },
+  {
+    "date":"2026-02-22",
+    "product":"Collector Box A",
+    "price":44.12,
+    "demand":94
+  },
+  {
+    "date":"2026-02-23",
+    "product":"Collector Box A",
+    "price":44.68,
+    "demand":89
+  },
+  {
+    "date":"2026-02-24",
+    "product":"Collector Box A",
+    "price":44.59,
+    "demand":97
+  },
+  {
+    "date":"2026-02-25",
+    "product":"Collector Box A",
+    "price":44.55,
+    "demand":94
+  },
+  {
+    "date":"2026-02-26",
+    "product":"Collector Box A",
+    "price":44.86,
+    "demand":97
+  },
+  {
+    "date":"2026-02-27",
+    "product":"Collector Box A",
+    "price":46.0,
+    "demand":95
+  },
+  {
+    "date":"2026-02-28",
+    "product":"Collector Box A",
+    "price":44.93,
+    "demand":104
+  },
+  {
+    "date":"2026-03-01",
+    "product":"Collector Box A",
+    "price":46.21,
+    "demand":93
+  },
+  {
+    "date":"2026-01-01",
+    "product":"Premium Pack B",
+    "price":17.44,
+    "demand":136
+  },
+  {
+    "date":"2026-01-02",
+    "product":"Premium Pack B",
+    "price":18.43,
+    "demand":129
+  },
+  {
+    "date":"2026-01-03",
+    "product":"Premium Pack B",
+    "price":18.77,
+    "demand":125
+  },
+  {
+    "date":"2026-01-04",
+    "product":"Premium Pack B",
+    "price":19.68,
+    "demand":132
+  },
+  {
+    "date":"2026-01-05",
+    "product":"Premium Pack B",
+    "price":19.66,
+    "demand":129
+  },
+  {
+    "date":"2026-01-06",
+    "product":"Premium Pack B",
+    "price":19.61,
+    "demand":134
+  },
+  {
+    "date":"2026-01-07",
+    "product":"Premium Pack B",
+    "price":20.38,
+    "demand":126
+  },
+  {
+    "date":"2026-01-08",
+    "product":"Premium Pack B",
+    "price":19.03,
+    "demand":121
+  },
+  {
+    "date":"2026-01-09",
+    "product":"Premium Pack B",
+    "price":19.39,
+    "demand":120
+  },
+  {
+    "date":"2026-01-10",
+    "product":"Premium Pack B",
+    "price":19.22,
+    "demand":135
+  },
+  {
+    "date":"2026-01-11",
+    "product":"Premium Pack B",
+    "price":19.45,
+    "demand":135
+  },
+  {
+    "date":"2026-01-12",
+    "product":"Premium Pack B",
+    "price":18.79,
+    "demand":127
+  },
+  {
+    "date":"2026-01-13",
+    "product":"Premium Pack B",
+    "price":19.72,
+    "demand":124
+  },
+  {
+    "date":"2026-01-14",
+    "product":"Premium Pack B",
+    "price":19.04,
+    "demand":134
+  },
+  {
+    "date":"2026-01-15",
+    "product":"Premium Pack B",
+    "price":18.11,
+    "demand":123
+  },
+  {
+    "date":"2026-01-16",
+    "product":"Premium Pack B",
+    "price":18.1,
+    "demand":124
+  },
+  {
+    "date":"2026-01-17",
+    "product":"Premium Pack B",
+    "price":18.56,
+    "demand":131
+  },
+  {
+    "date":"2026-01-18",
+    "product":"Premium Pack B",
+    "price":18.59,
+    "demand":126
+  },
+  {
+    "date":"2026-01-19",
+    "product":"Premium Pack B",
+    "price":18.97,
+    "demand":127
+  },
+  {
+    "date":"2026-01-20",
+    "product":"Premium Pack B",
+    "price":19.25,
+    "demand":126
+  },
+  {
+    "date":"2026-01-21",
+    "product":"Premium Pack B",
+    "price":17.69,
+    "demand":130
+  },
+  {
+    "date":"2026-01-22",
+    "product":"Premium Pack B",
+    "price":16.78,
+    "demand":137
+  },
+  {
+    "date":"2026-01-23",
+    "product":"Premium Pack B",
+    "price":16.06,
+    "demand":131
+  },
+  {
+    "date":"2026-01-24",
+    "product":"Premium Pack B",
+    "price":17.35,
+    "demand":132
+  },
+  {
+    "date":"2026-01-25",
+    "product":"Premium Pack B",
+    "price":16.78,
+    "demand":120
+  },
+  {
+    "date":"2026-01-26",
+    "product":"Premium Pack B",
+    "price":17.08,
+    "demand":129
+  },
+  {
+    "date":"2026-01-27",
+    "product":"Premium Pack B",
+    "price":17.12,
+    "demand":125
+  },
+  {
+    "date":"2026-01-28",
+    "product":"Premium Pack B",
+    "price":17.57,
+    "demand":123
+  },
+  {
+    "date":"2026-01-29",
+    "product":"Premium Pack B",
+    "price":18.48,
+    "demand":123
+  },
+  {
+    "date":"2026-01-30",
+    "product":"Premium Pack B",
+    "price":18.26,
+    "demand":126
+  },
+  {
+    "date":"2026-01-31",
+    "product":"Premium Pack B",
+    "price":18.39,
+    "demand":133
+  },
+  {
+    "date":"2026-02-01",
+    "product":"Premium Pack B",
+    "price":18.24,
+    "demand":121
+  },
+  {
+    "date":"2026-02-02",
+    "product":"Premium Pack B",
+    "price":18.21,
+    "demand":128
+  },
+  {
+    "date":"2026-02-03",
+    "product":"Premium Pack B",
+    "price":19.19,
+    "demand":125
+  },
+  {
+    "date":"2026-02-04",
+    "product":"Premium Pack B",
+    "price":19.73,
+    "demand":125
+  },
+  {
+    "date":"2026-02-05",
+    "product":"Premium Pack B",
+    "price":21.01,
+    "demand":130
+  },
+  {
+    "date":"2026-02-06",
+    "product":"Premium Pack B",
+    "price":20.34,
+    "demand":128
+  },
+  {
+    "date":"2026-02-07",
+    "product":"Premium Pack B",
+    "price":21.0,
+    "demand":131
+  },
+  {
+    "date":"2026-02-08",
+    "product":"Premium Pack B",
+    "price":20.32,
+    "demand":125
+  },
+  {
+    "date":"2026-02-09",
+    "product":"Premium Pack B",
+    "price":20.02,
+    "demand":123
+  },
+  {
+    "date":"2026-02-10",
+    "product":"Premium Pack B",
+    "price":20.15,
+    "demand":125
+  },
+  {
+    "date":"2026-02-11",
+    "product":"Premium Pack B",
+    "price":20.24,
+    "demand":127
+  },
+  {
+    "date":"2026-02-12",
+    "product":"Premium Pack B",
+    "price":21.71,
+    "demand":125
+  },
+  {
+    "date":"2026-02-13",
+    "product":"Premium Pack B",
+    "price":19.94,
+    "demand":121
+  },
+  {
+    "date":"2026-02-14",
+    "product":"Premium Pack B",
+    "price":20.66,
+    "demand":126
+  },
+  {
+    "date":"2026-02-15",
+    "product":"Premium Pack B",
+    "price":19.47,
+    "demand":128
+  },
+  {
+    "date":"2026-02-16",
+    "product":"Premium Pack B",
+    "price":20.23,
+    "demand":138
+  },
+  {
+    "date":"2026-02-17",
+    "product":"Premium Pack B",
+    "price":19.66,
+    "demand":136
+  },
+  {
+    "date":"2026-02-18",
+    "product":"Premium Pack B",
+    "price":19.09,
+    "demand":123
+  },
+  {
+    "date":"2026-02-19",
+    "product":"Premium Pack B",
+    "price":18.9,
+    "demand":126
+  },
+  {
+    "date":"2026-02-20",
+    "product":"Premium Pack B",
+    "price":18.32,
+    "demand":121
+  },
+  {
+    "date":"2026-02-21",
+    "product":"Premium Pack B",
+    "price":18.73,
+    "demand":125
+  },
+  {
+    "date":"2026-02-22",
+    "product":"Premium Pack B",
+    "price":18.07,
+    "demand":130
+  },
+  {
+    "date":"2026-02-23",
+    "product":"Premium Pack B",
+    "price":17.53,
+    "demand":135
+  },
+  {
+    "date":"2026-02-24",
+    "product":"Premium Pack B",
+    "price":17.45,
+    "demand":125
+  },
+  {
+    "date":"2026-02-25",
+    "product":"Premium Pack B",
+    "price":18.24,
+    "demand":125
+  },
+  {
+    "date":"2026-02-26",
+    "product":"Premium Pack B",
+    "price":19.08,
+    "demand":116
+  },
+  {
+    "date":"2026-02-27",
+    "product":"Premium Pack B",
+    "price":18.42,
+    "demand":127
+  },
+  {
+    "date":"2026-02-28",
+    "product":"Premium Pack B",
+    "price":18.44,
+    "demand":123
+  },
+  {
+    "date":"2026-03-01",
+    "product":"Premium Pack B",
+    "price":18.89,
+    "demand":125
+  },
+  {
+    "date":"2026-01-01",
+    "product":"Limited Card C",
+    "price":74.52,
+    "demand":69
+  },
+  {
+    "date":"2026-01-02",
+    "product":"Limited Card C",
+    "price":75.39,
+    "demand":52
+  },
+  {
+    "date":"2026-01-03",
+    "product":"Limited Card C",
+    "price":74.9,
+    "demand":64
+  },
+  {
+    "date":"2026-01-04",
+    "product":"Limited Card C",
+    "price":75.46,
+    "demand":58
+  },
+  {
+    "date":"2026-01-05",
+    "product":"Limited Card C",
+    "price":77.81,
+    "demand":56
+  },
+  {
+    "date":"2026-01-06",
+    "product":"Limited Card C",
+    "price":76.25,
+    "demand":53
+  },
+  {
+    "date":"2026-01-07",
+    "product":"Limited Card C",
+    "price":76.63,
+    "demand":56
+  },
+  {
+    "date":"2026-01-08",
+    "product":"Limited Card C",
+    "price":78.47,
+    "demand":62
+  },
+  {
+    "date":"2026-01-09",
+    "product":"Limited Card C",
+    "price":79.22,
+    "demand":58
+  },
+  {
+    "date":"2026-01-10",
+    "product":"Limited Card C",
+    "price":77.08,
+    "demand":66
+  },
+  {
+    "date":"2026-01-11",
+    "product":"Limited Card C",
+    "price":77.56,
+    "demand":63
+  },
+  {
+    "date":"2026-01-12",
+    "product":"Limited Card C",
+    "price":77.94,
+    "demand":59
+  },
+  {
+    "date":"2026-01-13",
+    "product":"Limited Card C",
+    "price":78.64,
+    "demand":64
+  },
+  {
+    "date":"2026-01-14",
+    "product":"Limited Card C",
+    "price":77.05,
+    "demand":60
+  },
+  {
+    "date":"2026-01-15",
+    "product":"Limited Card C",
+    "price":77.33,
+    "demand":61
+  },
+  {
+    "date":"2026-01-16",
+    "product":"Limited Card C",
+    "price":77.74,
+    "demand":55
+  },
+  {
+    "date":"2026-01-17",
+    "product":"Limited Card C",
+    "price":77.39,
+    "demand":57
+  },
+  {
+    "date":"2026-01-18",
+    "product":"Limited Card C",
+    "price":76.79,
+    "demand":54
+  },
+  {
+    "date":"2026-01-19",
+    "product":"Limited Card C",
+    "price":76.78,
+    "demand":63
+  },
+  {
+    "date":"2026-01-20",
+    "product":"Limited Card C",
+    "price":75.99,
+    "demand":53
+  },
+  {
+    "date":"2026-01-21",
+    "product":"Limited Card C",
+    "price":76.53,
+    "demand":62
+  },
+  {
+    "date":"2026-01-22",
+    "product":"Limited Card C",
+    "price":76.49,
+    "demand":57
+  },
+  {
+    "date":"2026-01-23",
+    "product":"Limited Card C",
+    "price":76.78,
+    "demand":64
+  },
+  {
+    "date":"2026-01-24",
+    "product":"Limited Card C",
+    "price":76.42,
+    "demand":62
+  },
+  {
+    "date":"2026-01-25",
+    "product":"Limited Card C",
+    "price":77.13,
+    "demand":67
+  },
+  {
+    "date":"2026-01-26",
+    "product":"Limited Card C",
+    "price":77.62,
+    "demand":61
+  },
+  {
+    "date":"2026-01-27",
+    "product":"Limited Card C",
+    "price":77.4,
+    "demand":49
+  },
+  {
+    "date":"2026-01-28",
+    "product":"Limited Card C",
+    "price":77.81,
+    "demand":56
+  },
+  {
+    "date":"2026-01-29",
+    "product":"Limited Card C",
+    "price":78.0,
+    "demand":51
+  },
+  {
+    "date":"2026-01-30",
+    "product":"Limited Card C",
+    "price":78.36,
+    "demand":53
+  },
+  {
+    "date":"2026-01-31",
+    "product":"Limited Card C",
+    "price":78.38,
+    "demand":63
+  },
+  {
+    "date":"2026-02-01",
+    "product":"Limited Card C",
+    "price":79.39,
+    "demand":58
+  },
+  {
+    "date":"2026-02-02",
+    "product":"Limited Card C",
+    "price":79.6,
+    "demand":51
+  },
+  {
+    "date":"2026-02-03",
+    "product":"Limited Card C",
+    "price":81.24,
+    "demand":47
+  },
+  {
+    "date":"2026-02-04",
+    "product":"Limited Card C",
+    "price":81.37,
+    "demand":53
+  },
+  {
+    "date":"2026-02-05",
+    "product":"Limited Card C",
+    "price":81.1,
+    "demand":47
+  },
+  {
+    "date":"2026-02-06",
+    "product":"Limited Card C",
+    "price":80.81,
+    "demand":50
+  },
+  {
+    "date":"2026-02-07",
+    "product":"Limited Card C",
+    "price":80.92,
+    "demand":54
+  },
+  {
+    "date":"2026-02-08",
+    "product":"Limited Card C",
+    "price":82.43,
+    "demand":57
+  },
+  {
+    "date":"2026-02-09",
+    "product":"Limited Card C",
+    "price":82.1,
+    "demand":55
+  },
+  {
+    "date":"2026-02-10",
+    "product":"Limited Card C",
+    "price":82.35,
+    "demand":40
+  },
+  {
+    "date":"2026-02-11",
+    "product":"Limited Card C",
+    "price":81.19,
+    "demand":54
+  },
+  {
+    "date":"2026-02-12",
+    "product":"Limited Card C",
+    "price":82.67,
+    "demand":51
+  },
+  {
+    "date":"2026-02-13",
+    "product":"Limited Card C",
+    "price":82.37,
+    "demand":53
+  },
+  {
+    "date":"2026-02-14",
+    "product":"Limited Card C",
+    "price":81.43,
+    "demand":60
+  },
+  {
+    "date":"2026-02-15",
+    "product":"Limited Card C",
+    "price":81.66,
+    "demand":42
+  },
+  {
+    "date":"2026-02-16",
+    "product":"Limited Card C",
+    "price":81.92,
+    "demand":49
+  },
+  {
+    "date":"2026-02-17",
+    "product":"Limited Card C",
+    "price":81.65,
+    "demand":55
+  },
+  {
+    "date":"2026-02-18",
+    "product":"Limited Card C",
+    "price":81.3,
+    "demand":45
+  },
+  {
+    "date":"2026-02-19",
+    "product":"Limited Card C",
+    "price":81.25,
+    "demand":60
+  },
+  {
+    "date":"2026-02-20",
+    "product":"Limited Card C",
+    "price":81.05,
+    "demand":55
+  },
+  {
+    "date":"2026-02-21",
+    "product":"Limited Card C",
+    "price":81.17,
+    "demand":57
+  },
+  {
+    "date":"2026-02-22",
+    "product":"Limited Card C",
+    "price":81.85,
+    "demand":49
+  },
+  {
+    "date":"2026-02-23",
+    "product":"Limited Card C",
+    "price":79.62,
+    "demand":59
+  },
+  {
+    "date":"2026-02-24",
+    "product":"Limited Card C",
+    "price":80.96,
+    "demand":58
+  },
+  {
+    "date":"2026-02-25",
+    "product":"Limited Card C",
+    "price":81.3,
+    "demand":54
+  },
+  {
+    "date":"2026-02-26",
+    "product":"Limited Card C",
+    "price":81.53,
+    "demand":53
+  },
+  {
+    "date":"2026-02-27",
+    "product":"Limited Card C",
+    "price":81.4,
+    "demand":54
+  },
+  {
+    "date":"2026-02-28",
+    "product":"Limited Card C",
+    "price":80.92,
+    "demand":49
+  },
+  {
+    "date":"2026-03-01",
+    "product":"Limited Card C",
+    "price":82.4,
+    "demand":50
+  }
+]

@@ -1,14 +1,15 @@
 # Pokemon AI Dynamic Pricing
 
-This project trains Random Forest and XGBoost models using Pokemon card market-price history. It includes a Flask API and Streamlit dashboard.
+This project trains Random Forest and XGBoost models using Pokemon card market-price history. It includes a Flask API and a mobile-first Flask web UI.
 
 Predictions return a 7-day forecast by default.
 
-The dashboard includes:
+The mobile UI includes:
 
 - A buyer workspace for market monitoring and AI price predictions
 - A seller workspace for minimum-price protection and automatic market-following listing prices
-- A custom-data workspace where users upload their own price history and receive a prediction
+- A custom-data workspace where users upload or paste JSON price history and receive a prediction
+- A simple role login screen for buyer and seller views
 
 ## Setup
 
@@ -28,23 +29,25 @@ The best model is saved to `models/pokemon/best_model.joblib`.
 
 ## Run
 
-Start the API:
+Start the mobile UI:
+
+```powershell
+python mobile_app.py
+```
+
+Open `http://localhost:8600`.
+
+Optional: start the API separately in another terminal:
 
 ```powershell
 python api.py
 ```
 
-Start the UI in another terminal:
-
-```powershell
-python -m streamlit run app.py
-```
-
-Open `http://localhost:8501`.
+The mobile UI can call the local API at `http://127.0.0.1:8000`, or use its built-in Pokemon prediction fallback when running locally.
 
 ## Deploy to Google Cloud Run
 
-The included `Dockerfile` trains the Pokemon model during the image build, starts the Flask API internally, and exposes the Streamlit UI on Cloud Run's assigned port.
+The included `Dockerfile` trains the Pokemon model during the image build, starts the Flask API internally, and exposes the mobile Flask UI on Cloud Run's assigned port.
 
 Deploy from the repository root:
 
@@ -135,7 +138,7 @@ Use a wrapped JSON object when field names are different or when predicting one 
 
 Custom history must contain at least 30 records. Training is temporary and does not overwrite the shared Pokemon model.
 
-The Custom Data workspace accepts uploaded JSON arrays, pasted JSON arrays, and CSV files.
+The Custom Data workspace accepts uploaded JSON arrays and pasted JSON arrays.
 
 ## Dataset
 

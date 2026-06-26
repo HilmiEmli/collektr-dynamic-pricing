@@ -1,0 +1,2402 @@
+[
+  {
+    "timestamp":"2026-02-01",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.0,
+    "units_sold":61,
+    "inventory":213
+  },
+  {
+    "timestamp":"2026-02-02",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.36,
+    "units_sold":54,
+    "inventory":206
+  },
+  {
+    "timestamp":"2026-02-03",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.32,
+    "units_sold":54,
+    "inventory":200
+  },
+  {
+    "timestamp":"2026-02-04",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.26,
+    "units_sold":55,
+    "inventory":193
+  },
+  {
+    "timestamp":"2026-02-05",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.65,
+    "units_sold":65,
+    "inventory":186
+  },
+  {
+    "timestamp":"2026-02-06",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.58,
+    "units_sold":53,
+    "inventory":179
+  },
+  {
+    "timestamp":"2026-02-07",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.2,
+    "units_sold":53,
+    "inventory":173
+  },
+  {
+    "timestamp":"2026-02-08",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.91,
+    "units_sold":56,
+    "inventory":166
+  },
+  {
+    "timestamp":"2026-02-09",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.18,
+    "units_sold":54,
+    "inventory":160
+  },
+  {
+    "timestamp":"2026-02-10",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.18,
+    "units_sold":54,
+    "inventory":153
+  },
+  {
+    "timestamp":"2026-02-11",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.72,
+    "units_sold":47,
+    "inventory":148
+  },
+  {
+    "timestamp":"2026-02-12",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.66,
+    "units_sold":54,
+    "inventory":141
+  },
+  {
+    "timestamp":"2026-02-13",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.51,
+    "units_sold":52,
+    "inventory":135
+  },
+  {
+    "timestamp":"2026-02-14",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.99,
+    "units_sold":62,
+    "inventory":127
+  },
+  {
+    "timestamp":"2026-02-15",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.31,
+    "units_sold":58,
+    "inventory":120
+  },
+  {
+    "timestamp":"2026-02-16",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.53,
+    "units_sold":54,
+    "inventory":114
+  },
+  {
+    "timestamp":"2026-02-17",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.48,
+    "units_sold":60,
+    "inventory":107
+  },
+  {
+    "timestamp":"2026-02-18",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.74,
+    "units_sold":53,
+    "inventory":100
+  },
+  {
+    "timestamp":"2026-02-19",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.94,
+    "units_sold":63,
+    "inventory":93
+  },
+  {
+    "timestamp":"2026-02-20",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.06,
+    "units_sold":56,
+    "inventory":86
+  },
+  {
+    "timestamp":"2026-02-21",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.65,
+    "units_sold":60,
+    "inventory":79
+  },
+  {
+    "timestamp":"2026-02-22",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.23,
+    "units_sold":48,
+    "inventory":73
+  },
+  {
+    "timestamp":"2026-02-23",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.62,
+    "units_sold":59,
+    "inventory":66
+  },
+  {
+    "timestamp":"2026-02-24",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.19,
+    "units_sold":46,
+    "inventory":60
+  },
+  {
+    "timestamp":"2026-02-25",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.04,
+    "units_sold":44,
+    "inventory":55
+  },
+  {
+    "timestamp":"2026-02-26",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.81,
+    "units_sold":55,
+    "inventory":49
+  },
+  {
+    "timestamp":"2026-02-27",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":22.71,
+    "units_sold":53,
+    "inventory":42
+  },
+  {
+    "timestamp":"2026-02-28",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.58,
+    "units_sold":58,
+    "inventory":35
+  },
+  {
+    "timestamp":"2026-03-01",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.81,
+    "units_sold":70,
+    "inventory":27
+  },
+  {
+    "timestamp":"2026-03-02",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.92,
+    "units_sold":52,
+    "inventory":21
+  },
+  {
+    "timestamp":"2026-03-03",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.26,
+    "units_sold":54,
+    "inventory":14
+  },
+  {
+    "timestamp":"2026-03-04",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.84,
+    "units_sold":58,
+    "inventory":7
+  },
+  {
+    "timestamp":"2026-03-05",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.74,
+    "units_sold":60,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-06",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":23.98,
+    "units_sold":55,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-07",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.0,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-08",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.36,
+    "units_sold":60,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-09",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.92,
+    "units_sold":58,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-10",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.56,
+    "units_sold":48,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-11",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.13,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-12",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.56,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-13",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.88,
+    "units_sold":47,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-14",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.06,
+    "units_sold":55,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-15",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.67,
+    "units_sold":49,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-16",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.43,
+    "units_sold":59,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-17",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":27.15,
+    "units_sold":53,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-18",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.96,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-19",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":27.13,
+    "units_sold":48,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-20",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.85,
+    "units_sold":52,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-21",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.53,
+    "units_sold":41,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-22",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":27.71,
+    "units_sold":44,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-23",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":27.11,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-24",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.16,
+    "units_sold":41,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-25",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.64,
+    "units_sold":58,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-26",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.76,
+    "units_sold":42,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-27",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.28,
+    "units_sold":58,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-28",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.53,
+    "units_sold":48,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-29",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.04,
+    "units_sold":58,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-30",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.21,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-31",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.4,
+    "units_sold":44,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-01",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.3,
+    "units_sold":62,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-02",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.57,
+    "units_sold":63,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-03",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.15,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-04",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.32,
+    "units_sold":53,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-05",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.66,
+    "units_sold":55,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-06",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.89,
+    "units_sold":49,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-07",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.05,
+    "units_sold":62,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-08",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.56,
+    "units_sold":51,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-09",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.73,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-10",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.7,
+    "units_sold":51,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-11",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.05,
+    "units_sold":51,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-12",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.84,
+    "units_sold":46,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-13",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":24.82,
+    "units_sold":63,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-14",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":25.69,
+    "units_sold":53,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-15",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.06,
+    "units_sold":59,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-16",
+    "sku":"ELEC-1001",
+    "item":"Wireless Charger",
+    "current_price":26.89,
+    "units_sold":52,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-02-01",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.69,
+    "units_sold":38,
+    "inventory":140
+  },
+  {
+    "timestamp":"2026-02-02",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.03,
+    "units_sold":29,
+    "inventory":137
+  },
+  {
+    "timestamp":"2026-02-03",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.09,
+    "units_sold":31,
+    "inventory":133
+  },
+  {
+    "timestamp":"2026-02-04",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.51,
+    "units_sold":29,
+    "inventory":130
+  },
+  {
+    "timestamp":"2026-02-05",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.48,
+    "units_sold":29,
+    "inventory":126
+  },
+  {
+    "timestamp":"2026-02-06",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.64,
+    "units_sold":36,
+    "inventory":122
+  },
+  {
+    "timestamp":"2026-02-07",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.26,
+    "units_sold":30,
+    "inventory":118
+  },
+  {
+    "timestamp":"2026-02-08",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.59,
+    "units_sold":37,
+    "inventory":114
+  },
+  {
+    "timestamp":"2026-02-09",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":40.74,
+    "units_sold":35,
+    "inventory":110
+  },
+  {
+    "timestamp":"2026-02-10",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.71,
+    "units_sold":47,
+    "inventory":104
+  },
+  {
+    "timestamp":"2026-02-11",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.52,
+    "units_sold":26,
+    "inventory":101
+  },
+  {
+    "timestamp":"2026-02-12",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":40.1,
+    "units_sold":39,
+    "inventory":96
+  },
+  {
+    "timestamp":"2026-02-13",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":40.5,
+    "units_sold":33,
+    "inventory":92
+  },
+  {
+    "timestamp":"2026-02-14",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.1,
+    "units_sold":35,
+    "inventory":88
+  },
+  {
+    "timestamp":"2026-02-15",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.53,
+    "units_sold":26,
+    "inventory":85
+  },
+  {
+    "timestamp":"2026-02-16",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.18,
+    "units_sold":32,
+    "inventory":81
+  },
+  {
+    "timestamp":"2026-02-17",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.49,
+    "units_sold":41,
+    "inventory":76
+  },
+  {
+    "timestamp":"2026-02-18",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.42,
+    "units_sold":34,
+    "inventory":72
+  },
+  {
+    "timestamp":"2026-02-19",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.88,
+    "units_sold":36,
+    "inventory":68
+  },
+  {
+    "timestamp":"2026-02-20",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.72,
+    "units_sold":34,
+    "inventory":64
+  },
+  {
+    "timestamp":"2026-02-21",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.14,
+    "units_sold":44,
+    "inventory":58
+  },
+  {
+    "timestamp":"2026-02-22",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.49,
+    "units_sold":36,
+    "inventory":54
+  },
+  {
+    "timestamp":"2026-02-23",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.85,
+    "units_sold":24,
+    "inventory":51
+  },
+  {
+    "timestamp":"2026-02-24",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.86,
+    "units_sold":33,
+    "inventory":47
+  },
+  {
+    "timestamp":"2026-02-25",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.27,
+    "units_sold":26,
+    "inventory":44
+  },
+  {
+    "timestamp":"2026-02-26",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.09,
+    "units_sold":19,
+    "inventory":42
+  },
+  {
+    "timestamp":"2026-02-27",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.14,
+    "units_sold":33,
+    "inventory":38
+  },
+  {
+    "timestamp":"2026-02-28",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.24,
+    "units_sold":46,
+    "inventory":32
+  },
+  {
+    "timestamp":"2026-03-01",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.56,
+    "units_sold":38,
+    "inventory":28
+  },
+  {
+    "timestamp":"2026-03-02",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.41,
+    "units_sold":31,
+    "inventory":24
+  },
+  {
+    "timestamp":"2026-03-03",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.25,
+    "units_sold":32,
+    "inventory":20
+  },
+  {
+    "timestamp":"2026-03-04",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.27,
+    "units_sold":45,
+    "inventory":15
+  },
+  {
+    "timestamp":"2026-03-05",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.87,
+    "units_sold":38,
+    "inventory":10
+  },
+  {
+    "timestamp":"2026-03-06",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.56,
+    "units_sold":38,
+    "inventory":6
+  },
+  {
+    "timestamp":"2026-03-07",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.76,
+    "units_sold":37,
+    "inventory":2
+  },
+  {
+    "timestamp":"2026-03-08",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.98,
+    "units_sold":37,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-09",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.67,
+    "units_sold":41,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-10",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.62,
+    "units_sold":39,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-11",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.66,
+    "units_sold":37,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-12",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.41,
+    "units_sold":30,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-13",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.21,
+    "units_sold":40,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-14",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.41,
+    "units_sold":31,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-15",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.56,
+    "units_sold":41,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-16",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.18,
+    "units_sold":28,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-17",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.58,
+    "units_sold":34,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-18",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.76,
+    "units_sold":34,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-19",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.81,
+    "units_sold":26,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-20",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.86,
+    "units_sold":45,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-21",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.21,
+    "units_sold":44,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-22",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":40.04,
+    "units_sold":31,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-23",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.71,
+    "units_sold":40,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-24",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.54,
+    "units_sold":37,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-25",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.23,
+    "units_sold":19,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-26",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.24,
+    "units_sold":37,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-27",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.51,
+    "units_sold":34,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-28",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":39.14,
+    "units_sold":36,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-29",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.75,
+    "units_sold":31,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-30",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.3,
+    "units_sold":36,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-31",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":38.22,
+    "units_sold":35,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-01",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.2,
+    "units_sold":45,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-02",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.47,
+    "units_sold":40,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-03",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.69,
+    "units_sold":37,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-04",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":36.42,
+    "units_sold":48,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-05",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":36.09,
+    "units_sold":36,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-06",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.07,
+    "units_sold":36,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-07",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":36.91,
+    "units_sold":27,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-08",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":36.75,
+    "units_sold":48,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-09",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":36.88,
+    "units_sold":44,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-10",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":36.51,
+    "units_sold":44,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-11",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":36.28,
+    "units_sold":43,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-12",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":36.97,
+    "units_sold":39,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-13",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":36.73,
+    "units_sold":40,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-14",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":36.56,
+    "units_sold":37,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-15",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.69,
+    "units_sold":36,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-16",
+    "sku":"ELEC-1002",
+    "item":"Gaming Mouse",
+    "current_price":37.6,
+    "units_sold":38,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-02-01",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.68,
+    "units_sold":59,
+    "inventory":168
+  },
+  {
+    "timestamp":"2026-02-02",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.46,
+    "units_sold":47,
+    "inventory":162
+  },
+  {
+    "timestamp":"2026-02-03",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.39,
+    "units_sold":41,
+    "inventory":157
+  },
+  {
+    "timestamp":"2026-02-04",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.35,
+    "units_sold":39,
+    "inventory":153
+  },
+  {
+    "timestamp":"2026-02-05",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.51,
+    "units_sold":46,
+    "inventory":147
+  },
+  {
+    "timestamp":"2026-02-06",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.67,
+    "units_sold":43,
+    "inventory":142
+  },
+  {
+    "timestamp":"2026-02-07",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.32,
+    "units_sold":38,
+    "inventory":137
+  },
+  {
+    "timestamp":"2026-02-08",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.23,
+    "units_sold":46,
+    "inventory":132
+  },
+  {
+    "timestamp":"2026-02-09",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.12,
+    "units_sold":38,
+    "inventory":127
+  },
+  {
+    "timestamp":"2026-02-10",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.83,
+    "units_sold":52,
+    "inventory":121
+  },
+  {
+    "timestamp":"2026-02-11",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.31,
+    "units_sold":51,
+    "inventory":115
+  },
+  {
+    "timestamp":"2026-02-12",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.72,
+    "units_sold":51,
+    "inventory":109
+  },
+  {
+    "timestamp":"2026-02-13",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.11,
+    "units_sold":42,
+    "inventory":104
+  },
+  {
+    "timestamp":"2026-02-14",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.11,
+    "units_sold":48,
+    "inventory":98
+  },
+  {
+    "timestamp":"2026-02-15",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.01,
+    "units_sold":44,
+    "inventory":93
+  },
+  {
+    "timestamp":"2026-02-16",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.04,
+    "units_sold":43,
+    "inventory":88
+  },
+  {
+    "timestamp":"2026-02-17",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.13,
+    "units_sold":44,
+    "inventory":82
+  },
+  {
+    "timestamp":"2026-02-18",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.58,
+    "units_sold":38,
+    "inventory":78
+  },
+  {
+    "timestamp":"2026-02-19",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.14,
+    "units_sold":38,
+    "inventory":73
+  },
+  {
+    "timestamp":"2026-02-20",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.75,
+    "units_sold":50,
+    "inventory":67
+  },
+  {
+    "timestamp":"2026-02-21",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.83,
+    "units_sold":46,
+    "inventory":62
+  },
+  {
+    "timestamp":"2026-02-22",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.28,
+    "units_sold":48,
+    "inventory":56
+  },
+  {
+    "timestamp":"2026-02-23",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.55,
+    "units_sold":52,
+    "inventory":50
+  },
+  {
+    "timestamp":"2026-02-24",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.59,
+    "units_sold":37,
+    "inventory":45
+  },
+  {
+    "timestamp":"2026-02-25",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.34,
+    "units_sold":43,
+    "inventory":40
+  },
+  {
+    "timestamp":"2026-02-26",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.6,
+    "units_sold":48,
+    "inventory":34
+  },
+  {
+    "timestamp":"2026-02-27",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.45,
+    "units_sold":50,
+    "inventory":28
+  },
+  {
+    "timestamp":"2026-02-28",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":29.97,
+    "units_sold":46,
+    "inventory":23
+  },
+  {
+    "timestamp":"2026-03-01",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.62,
+    "units_sold":53,
+    "inventory":17
+  },
+  {
+    "timestamp":"2026-03-02",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.35,
+    "units_sold":47,
+    "inventory":11
+  },
+  {
+    "timestamp":"2026-03-03",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.38,
+    "units_sold":40,
+    "inventory":6
+  },
+  {
+    "timestamp":"2026-03-04",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.5,
+    "units_sold":42,
+    "inventory":1
+  },
+  {
+    "timestamp":"2026-03-05",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.23,
+    "units_sold":53,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-06",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.99,
+    "units_sold":49,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-07",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.45,
+    "units_sold":36,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-08",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.7,
+    "units_sold":55,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-09",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.97,
+    "units_sold":49,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-10",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.2,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-11",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.3,
+    "units_sold":42,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-12",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.71,
+    "units_sold":42,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-13",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.35,
+    "units_sold":38,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-14",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.67,
+    "units_sold":59,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-15",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":33.47,
+    "units_sold":42,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-16",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.66,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-17",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.61,
+    "units_sold":40,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-18",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.37,
+    "units_sold":46,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-19",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":33.07,
+    "units_sold":34,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-20",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":33.76,
+    "units_sold":40,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-21",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":33.53,
+    "units_sold":49,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-22",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.65,
+    "units_sold":37,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-23",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.64,
+    "units_sold":51,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-24",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.71,
+    "units_sold":46,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-25",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.96,
+    "units_sold":38,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-26",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.61,
+    "units_sold":41,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-27",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.65,
+    "units_sold":42,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-28",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.53,
+    "units_sold":44,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-29",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.09,
+    "units_sold":42,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-30",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.04,
+    "units_sold":40,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-31",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.98,
+    "units_sold":43,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-01",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.69,
+    "units_sold":39,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-02",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.8,
+    "units_sold":38,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-03",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.28,
+    "units_sold":45,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-04",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.6,
+    "units_sold":51,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-05",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.27,
+    "units_sold":37,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-06",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.43,
+    "units_sold":47,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-07",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.34,
+    "units_sold":42,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-08",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.29,
+    "units_sold":42,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-09",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.57,
+    "units_sold":52,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-10",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.66,
+    "units_sold":43,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-11",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.69,
+    "units_sold":55,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-12",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.43,
+    "units_sold":41,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-13",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":30.88,
+    "units_sold":49,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-14",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.66,
+    "units_sold":44,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-15",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":31.71,
+    "units_sold":41,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-16",
+    "sku":"HOME-2001",
+    "item":"Desk Lamp",
+    "current_price":32.5,
+    "units_sold":48,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-02-01",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.93,
+    "units_sold":64,
+    "inventory":252
+  },
+  {
+    "timestamp":"2026-02-02",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.47,
+    "units_sold":66,
+    "inventory":244
+  },
+  {
+    "timestamp":"2026-02-03",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.37,
+    "units_sold":63,
+    "inventory":237
+  },
+  {
+    "timestamp":"2026-02-04",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.09,
+    "units_sold":60,
+    "inventory":230
+  },
+  {
+    "timestamp":"2026-02-05",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.71,
+    "units_sold":58,
+    "inventory":223
+  },
+  {
+    "timestamp":"2026-02-06",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.92,
+    "units_sold":62,
+    "inventory":215
+  },
+  {
+    "timestamp":"2026-02-07",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.46,
+    "units_sold":59,
+    "inventory":208
+  },
+  {
+    "timestamp":"2026-02-08",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.72,
+    "units_sold":65,
+    "inventory":200
+  },
+  {
+    "timestamp":"2026-02-09",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.18,
+    "units_sold":63,
+    "inventory":193
+  },
+  {
+    "timestamp":"2026-02-10",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.46,
+    "units_sold":56,
+    "inventory":186
+  },
+  {
+    "timestamp":"2026-02-11",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.54,
+    "units_sold":63,
+    "inventory":178
+  },
+  {
+    "timestamp":"2026-02-12",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.73,
+    "units_sold":56,
+    "inventory":172
+  },
+  {
+    "timestamp":"2026-02-13",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.35,
+    "units_sold":61,
+    "inventory":164
+  },
+  {
+    "timestamp":"2026-02-14",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.06,
+    "units_sold":62,
+    "inventory":157
+  },
+  {
+    "timestamp":"2026-02-15",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.47,
+    "units_sold":50,
+    "inventory":151
+  },
+  {
+    "timestamp":"2026-02-16",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.15,
+    "units_sold":65,
+    "inventory":143
+  },
+  {
+    "timestamp":"2026-02-17",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.2,
+    "units_sold":65,
+    "inventory":135
+  },
+  {
+    "timestamp":"2026-02-18",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.18,
+    "units_sold":64,
+    "inventory":128
+  },
+  {
+    "timestamp":"2026-02-19",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.83,
+    "units_sold":62,
+    "inventory":120
+  },
+  {
+    "timestamp":"2026-02-20",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.33,
+    "units_sold":62,
+    "inventory":113
+  },
+  {
+    "timestamp":"2026-02-21",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.62,
+    "units_sold":59,
+    "inventory":106
+  },
+  {
+    "timestamp":"2026-02-22",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.48,
+    "units_sold":64,
+    "inventory":98
+  },
+  {
+    "timestamp":"2026-02-23",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.91,
+    "units_sold":62,
+    "inventory":91
+  },
+  {
+    "timestamp":"2026-02-24",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.16,
+    "units_sold":67,
+    "inventory":83
+  },
+  {
+    "timestamp":"2026-02-25",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.56,
+    "units_sold":58,
+    "inventory":76
+  },
+  {
+    "timestamp":"2026-02-26",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":16.83,
+    "units_sold":68,
+    "inventory":67
+  },
+  {
+    "timestamp":"2026-02-27",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":16.65,
+    "units_sold":68,
+    "inventory":59
+  },
+  {
+    "timestamp":"2026-02-28",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":16.32,
+    "units_sold":66,
+    "inventory":51
+  },
+  {
+    "timestamp":"2026-03-01",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.97,
+    "units_sold":62,
+    "inventory":44
+  },
+  {
+    "timestamp":"2026-03-02",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.0,
+    "units_sold":70,
+    "inventory":36
+  },
+  {
+    "timestamp":"2026-03-03",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.31,
+    "units_sold":56,
+    "inventory":29
+  },
+  {
+    "timestamp":"2026-03-04",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.26,
+    "units_sold":69,
+    "inventory":21
+  },
+  {
+    "timestamp":"2026-03-05",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.46,
+    "units_sold":67,
+    "inventory":13
+  },
+  {
+    "timestamp":"2026-03-06",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.54,
+    "units_sold":67,
+    "inventory":5
+  },
+  {
+    "timestamp":"2026-03-07",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.53,
+    "units_sold":66,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-08",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.38,
+    "units_sold":62,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-09",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.34,
+    "units_sold":64,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-10",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.78,
+    "units_sold":69,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-11",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.84,
+    "units_sold":68,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-12",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.97,
+    "units_sold":65,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-13",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.2,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-14",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.58,
+    "units_sold":67,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-15",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.55,
+    "units_sold":71,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-16",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.16,
+    "units_sold":69,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-17",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":20.06,
+    "units_sold":63,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-18",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.26,
+    "units_sold":55,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-19",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.83,
+    "units_sold":68,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-20",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.14,
+    "units_sold":62,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-21",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":20.09,
+    "units_sold":47,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-22",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.1,
+    "units_sold":66,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-23",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.39,
+    "units_sold":54,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-24",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.75,
+    "units_sold":56,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-25",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.87,
+    "units_sold":60,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-26",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.79,
+    "units_sold":70,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-27",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":19.38,
+    "units_sold":61,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-28",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.66,
+    "units_sold":65,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-29",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.27,
+    "units_sold":75,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-30",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.63,
+    "units_sold":75,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-03-31",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.13,
+    "units_sold":64,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-01",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.12,
+    "units_sold":63,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-02",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.94,
+    "units_sold":57,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-03",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.79,
+    "units_sold":61,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-04",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.21,
+    "units_sold":68,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-05",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.59,
+    "units_sold":68,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-06",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.53,
+    "units_sold":66,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-07",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.1,
+    "units_sold":71,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-08",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.35,
+    "units_sold":60,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-09",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.48,
+    "units_sold":65,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-10",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.25,
+    "units_sold":70,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-11",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.65,
+    "units_sold":69,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-12",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.53,
+    "units_sold":72,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-13",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.61,
+    "units_sold":68,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-14",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.08,
+    "units_sold":63,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-15",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":17.81,
+    "units_sold":67,
+    "inventory":0
+  },
+  {
+    "timestamp":"2026-04-16",
+    "sku":"HOME-2002",
+    "item":"Travel Tumbler",
+    "current_price":18.75,
+    "units_sold":58,
+    "inventory":0
+  }
+]

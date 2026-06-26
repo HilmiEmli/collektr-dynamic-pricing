@@ -7,6 +7,7 @@ import pandas as pd
 
 
 OUTPUT = Path(__file__).resolve().parent.parent / "data" / "custom_price_history_sample.csv"
+JSON_OUTPUT = Path(__file__).resolve().parent.parent / "data" / "custom_price_history_sample.json"
 
 
 def main() -> None:
@@ -39,8 +40,11 @@ def main() -> None:
             )
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    pd.DataFrame(rows).to_csv(OUTPUT, index=False)
+    output_df = pd.DataFrame(rows)
+    output_df.to_csv(OUTPUT, index=False)
+    output_df.to_json(JSON_OUTPUT, orient="records", indent=2)
     print(f"Wrote {len(rows)} rows to {OUTPUT}")
+    print(f"Wrote {len(rows)} records to {JSON_OUTPUT}")
 
 
 if __name__ == "__main__":
